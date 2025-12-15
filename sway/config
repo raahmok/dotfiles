@@ -1,0 +1,10 @@
+# ============== SWAY CONFIG ============== #
+
+include exec
+include env
+include variables
+include keybinds
+include movement
+include windows
+
+include /etc/sway/config.d/*

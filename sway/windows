@@ -1,0 +1,17 @@
+### window config
+
+# Gaps between windows
+gaps inner 16px
+gaps outer 0px
+
+# Border width
+default_border pixel 2px
+default_floating_border pixel 2px
+
+# The border colors:
+#                        border    bg        text      ind       child border
+client.focused          #d8cab8 #141216 #d8cab8 #d8cab8 #d8cab8
+client.focused_inactive #AC82E9 #141216 #d8cab8 #AC82E9 #AC82E9
+client.unfocused        #AC82E9 #141216 #d8cab8 #AC82E9 #AC82E9
+client.urgent           #fcb167 #141216 #d8cab8 #fcb167 #fcb167
+client.placeholder      #AC82E9 #141216 #d8cab8 #AC82E9 #AC82E9

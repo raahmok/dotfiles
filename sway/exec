@@ -1,0 +1,4 @@
+# ======== EXECUTE ======= #
+
+exec_always ~/.config/eww/scripts/start.sh
+exec_always blueman-applet

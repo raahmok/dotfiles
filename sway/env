@@ -1,0 +1,41 @@
+
+### output
+
+output HDMI-A-1 resolution 1920x1080 position 1920,0
+
+# wallpaper 
+output * bg ~/Pictures/wallpapers/kocicka.webp fill 
+
+### Idle configuration
+#exec swayidle -w timeout 300 '$swaylock'
+
+### Input configuration
+
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+    dwt enabled
+    middle_emulation enabled
+    scroll_method two_finger
+    click_method clickfinger
+}
+
+# Utilities:
+
+# Special keys to adjust volume via PulseAudio
+bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
+bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+# Special keys to adjust brightness via brightnessctl
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+# Special key to take a screenshot with grim
+bindsym Print exec grim
+
+
+# Status Bar:
+
+bar {
+    swaybar_command waybar
+}

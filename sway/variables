@@ -1,0 +1,25 @@
+#movement
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+
+#apps
+set $term kitty 
+#set $menu wmenu-run
+set $firefox firefox
+set $zen zen-browser
+set $private-browser firefox --private-window
+set $files nemo 
+set $menu wofi
+set $swaylock swaylock --screenshots \
+		--ignore-empty-password \
+		--daemonize \
+		--indicator-caps-lock \
+		--indicator \
+		--clock \
+		--timestr "󰥔 %Hh %Mm %Ss"\
+		--datestr "󰃭 %b-%d-%Y" \
+		--show-failed-attempts \
+		--indicator-idle-visible

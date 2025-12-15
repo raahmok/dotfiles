@@ -1,0 +1,44 @@
+# ========= KEYBINDS ========= #
+
+#apps
+bindsym $mod+q kill
+bindsym $mod+Return exec $term
+bindsym $mod+d exec $menu
+bindsym $mod+e exec $files
+bindsym $mod+Shift+f exec $zen
+bindsym $mod+Shift+p exec $private-browser
+bindsym $mod+z exec $swaylock 
+
+# Reload 
+bindsym $mod+Shift+c reload
+
+#logout
+bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you want to log out?' -B 'Yes daddy!' 'swaymsg exit'
+
+# mouse controls
+floating_modifier $mod normal
+
+# split toggle
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+# Switch the current container between different layout styles
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+x layout toggle split
+
+# fullscreen
+bindsym $mod+f fullscreen
+
+# Toggle the current focus between tiling and floating mode
+bindsym $mod+Shift+space floating toggle
+
+# Swap focus between the tiling area and the floating area
+bindsym $mod+space focus mode_toggle
+
+# Move focus to the parent container
+bindsym $mod+a focus parent
+
+# Scratchpad:
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
